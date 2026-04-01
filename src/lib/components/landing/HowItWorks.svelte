@@ -29,8 +29,8 @@
 			class="mb-6 text-center opacity-0 translate-y-4 transition-all duration-500 in-view:opacity-100 in-view:translate-y-0"
 			use:inview
 		>
-			<p class="mb-2 text-xs font-medium tracking-wide text-primary uppercase">How It Works</p>
-			<h2 class="text-2xl font-bold tracking-tight sm:text-3xl">
+			<p class="text-label uppercase text-sprout">How It Works</p>
+			<h2 class="mt-2 text-h2 text-cream">
 				Three steps to structured data
 			</h2>
 		</div>
@@ -42,15 +42,15 @@
 					style="transition-delay: {i * 100}ms"
 					use:inview
 				>
-					<div class="rounded-lg border border-border bg-card/50 p-4 backdrop-blur-sm transition-colors hover:border-primary/30">
+					<div class="rounded-lg border border-white/[0.06] bg-white/[0.02] p-4 backdrop-blur-sm transition-colors hover:border-white/[0.1]">
 						<div class="mb-3 flex items-center gap-2">
-							<div class="flex size-8 items-center justify-center rounded-md bg-primary/10 text-primary">
+							<div class="flex size-8 items-center justify-center rounded-md bg-sprout/10 text-sprout">
 								{@html step.icon}
 							</div>
-							<span class="font-mono text-xs text-muted-foreground">{step.number}</span>
+							<span class="font-mono text-xs text-cream/25">{step.number}</span>
 						</div>
-						<h3 class="mb-1 text-sm font-semibold">{step.title}</h3>
-						<p class="text-xs leading-relaxed text-muted-foreground">{step.description}</p>
+						<h3 class="mb-1 text-sm font-semibold text-cream">{step.title}</h3>
+						<p class="text-xs leading-relaxed text-warm-grey/70">{step.description}</p>
 					</div>
 				</div>
 			{/each}

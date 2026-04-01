@@ -31,8 +31,8 @@
 			class="mb-6 text-center opacity-0 translate-y-4 transition-all duration-500 in-view:opacity-100 in-view:translate-y-0"
 			use:inview
 		>
-			<p class="mb-2 text-xs font-medium tracking-wide text-primary uppercase">Security</p>
-			<h2 class="text-2xl font-bold tracking-tight sm:text-3xl">
+			<p class="text-label uppercase text-sprout">Security</p>
+			<h2 class="mt-2 text-h2 text-cream">
 				Enterprise-ready from day one
 			</h2>
 		</div>
@@ -44,12 +44,12 @@
 					style="transition-delay: {i * 75}ms"
 					use:inview
 				>
-					<div class="h-full rounded-lg border border-border bg-card/50 p-4 text-center backdrop-blur-sm">
-						<div class="mx-auto mb-2 flex size-8 items-center justify-center rounded-md bg-primary/10 text-primary">
+					<div class="h-full rounded-lg border border-white/[0.06] bg-white/[0.02] p-4 text-center backdrop-blur-sm">
+						<div class="mx-auto mb-2 flex size-8 items-center justify-center rounded-md bg-sprout/10 text-sprout">
 							{@html signal.icon}
 						</div>
-						<h3 class="mb-1 text-xs font-semibold">{signal.title}</h3>
-						<p class="text-[11px] leading-relaxed text-muted-foreground">{signal.description}</p>
+						<h3 class="mb-1 text-xs font-semibold text-cream">{signal.title}</h3>
+						<p class="text-[11px] leading-relaxed text-warm-grey/70">{signal.description}</p>
 					</div>
 				</div>
 			{/each}

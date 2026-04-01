@@ -17,13 +17,13 @@
 			class="opacity-0 transition-all duration-500 in-view:opacity-100"
 			use:inview
 		>
-			<p class="mb-4 text-center text-xs text-muted-foreground">
+			<p class="mb-4 text-center text-xs text-cream/25">
 				Trusted by leading pet health companies
 			</p>
 
 			<div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
 				{#each partners as partner}
-					<div class="text-sm font-semibold tracking-tight text-muted-foreground/30 select-none">
+					<div class="text-sm font-semibold tracking-tight text-cream/10 select-none">
 						{partner}
 					</div>
 				{/each}
